@@ -28,10 +28,17 @@ echo json_encode($lista);
 
 echo json_encode($busca);
 */
-
+/*
 $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("cachorro","gato");
+
+echo $usuario;
+*/
+$usuario = new Usuario();
+$usuario->loadById(7);
+
+$usuario->delete();
 
 echo $usuario;
 ?>
